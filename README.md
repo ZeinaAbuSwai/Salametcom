@@ -1,5 +1,7 @@
 # project-template
 
+[![Join the chat at https://gitter.im/Salametcom2017/Lobby](https://badges.gitter.im/Salametcom2017/Lobby.svg)](https://gitter.im/Salametcom2017/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A template repository with wiki for a team project at JCE's software engineering course (replace with the mission of your project).
 
 (See also:rRecommended [checklist](https://github.com/ddbeck/readme-checklist/blob/master/checklist.md) for a README) 
