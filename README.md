@@ -29,7 +29,7 @@ We're trying to use the best tools and practices in order to produce a quality e
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
 
 
-### [User Manual](../../wiki/user-manual) (empty for now)
+### [User Manual](https://github.com/ZeinaAbuSwai/Salametcom/wiki/User-Manual) 
 
 ### [Team Page](../../wiki/team)
 
