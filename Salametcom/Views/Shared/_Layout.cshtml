@@ -22,22 +22,36 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("المتبرعون", "Donate", "Home")</li>
-                    <li>@Html.ActionLink("المتطوعون", "Voulnteer", "Home")</li>
-                    <li>@Html.ActionLink("مسؤولو الجمعية", "Adminstration", "Home")</li>
-                    <li>@Html.ActionLink("تواصل معنا", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("התורמים", "Donate", "Home")</li>
+                    <li>@Html.ActionLink("המתנדבים", "Voulnteer", "Home")</li>
+                    <li>@Html.ActionLink("צוות ההנהלה", "Adminstration", "Home")</li>
+                    <li>@Html.ActionLink("צור קשר", "Contact", "Home")</li>
+                 
                 </ul>
-              
+                <div class="navbar-collapse collapse">
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
+           
+
+            </div>
+    </div>
+    
+    <div class="row" >
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>© 2017&nbsp; by Azriali students</p>
+    
+   
+
+         <footer>
+             <div class="col-md-6 pull-left"><p>© 2017&nbsp; by Azriali students</p></div>
+             <div class="col-md-6 pull-right"><p> @DateTime.Now  :הזמן עכשיו</p></div>         
         </footer>
-    </div>
+  
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -45,3 +59,10 @@
 </body>
 
 </html>
+
+<style>
+    .body-content {
+        background-color : lightgray ;
+        background-size : 800px 100px  ;
+    }
+</style>

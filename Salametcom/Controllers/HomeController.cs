@@ -12,10 +12,15 @@ namespace Salametcom.Controllers
         {
             return View();
         }
-       
-            public ActionResult Donate()
+        [Authorize]
+        public ActionResult Calender()
         {
-            ViewBag.Message = "المتبرعون";
+            return View();
+        }
+
+        public ActionResult Donate()
+        {
+            ViewBag.Message = "התורמים";
 
 
             return View();
@@ -25,20 +30,29 @@ namespace Salametcom.Controllers
 
         public ActionResult Voulnteer()
         {
-            ViewBag.Message = "معلومات عن برامج التطوع المتوفرة";
-
+            ViewBag.Message = "מידע על אנשי הטורמים";
             return View();
+
+            return RedirectToAction("Calender", "Home");
+            
+
         }
-         public ActionResult Adminstration()
+        
+        public ActionResult Adminstration()
         {
-
-            ViewBag.Message = "نبذة عن المسؤولين القائمين في الجمعية";
-
             return View();
+            ViewBag.Message = "מידע על צוות הנהלה" ;
+            
+
+            return RedirectToAction("Calender", Calender());
+
+            
+            
+            
         }
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "צור קשר";
 
             return View();
         }
