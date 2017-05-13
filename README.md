@@ -29,21 +29,22 @@ We're trying to use the best tools and practices in order to produce a quality e
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
 
 
-### [User Manual](https://github.com/ZeinaAbuSwai/Salametcom/wiki/User-Manual) 
+### [User Manual](../../wiki/user-manual) (empty for now)
 
 ### [Team Page](../../wiki/team)
 
 ### Project Documents
+- [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
 - [Project Inception](../../wiki/Project-Inception)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
 
 ### Iteration Pages
 - [Iteration 0 - ZFR](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-0---ZFR)
-- [Iteration 1 - DESIGN](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-1--DESIGN)
-- [Iteration 2 - FUNCTIONALITY](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-2---FUNCTIONALITY)
-- [Iteration 3 - CALENDAR](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-3---CALENDAR)
-- [Iteration 4 - TEST & DEBUGGING](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-4---TEST-&-DEBUGGING)
+- [Iteration 1 - MVP]()
+- [Iteration 2 - Feature X]()
+- [Iteration 3 - Feature Y]()
+- [Iteration 4 - Feature Z]()
 
 
 

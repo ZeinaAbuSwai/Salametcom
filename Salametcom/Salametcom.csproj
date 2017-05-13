@@ -276,6 +276,7 @@
     <Content Include="Views\Home\Voulnteer.cshtml" />
     <Content Include="Views\Home\Adminstration.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
+    <Content Include="Views\Home\Calender.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
