@@ -12,7 +12,7 @@ namespace Salametcom.Controllers
         {
             return View();
         }
-        [Authorize]
+        
         public ActionResult Calender()
         {
             return View();
