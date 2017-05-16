@@ -10,7 +10,15 @@
         <h2>חדשות יומיומיות</h2>
 
     </div>
+    <div>
+@{
+    foreach (var user in ViewBag.users)
+    {
+        <span>@user.username</span>
+        }
+    }
 
+    </div>
 
 
     <div class="col-md-4" align="center">

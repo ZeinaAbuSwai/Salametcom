@@ -490,3 +490,5 @@ C:\Users\janina\Desktop\Salametcom\Salametcom\bin\Microsoft.Owin.Security.Micros
 C:\Users\janina\Desktop\Salametcom\Salametcom\obj\Debug\Salametcom.csprojResolveAssemblyReference.cache
 C:\Users\janina\Desktop\Salametcom\Salametcom\obj\Debug\Salametcom.dll
 C:\Users\janina\Desktop\Salametcom\Salametcom\obj\Debug\Salametcom.pdb
+C:\Users\Fuad_Sami\Desktop\Salametcom\Salametcom\bin\DB.dll
+C:\Users\Fuad_Sami\Desktop\Salametcom\Salametcom\bin\DB.pdb

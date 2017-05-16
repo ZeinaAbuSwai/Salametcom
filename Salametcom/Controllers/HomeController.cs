@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DB;
 
 namespace Salametcom.Controllers
 {
@@ -10,6 +11,8 @@ namespace Salametcom.Controllers
     {
         public ActionResult Index()
         {
+            Database db = new Database();
+            ViewBag.users = db.users;
             return View();
         }
         

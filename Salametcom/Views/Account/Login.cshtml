@@ -7,8 +7,7 @@
         <div class="row">
             <div class="col-md-10">
                 <section id="loginForm">
-                    @using (Html.BeginForm("כניסה", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-            {
+                    @using (Html.BeginForm("login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" })){
                 @Html.AntiForgeryToken()
 
                 <hr />
@@ -43,10 +42,9 @@
                 <p>
                     @Html.ActionLink("מתנדב חדש? לחץ פה", "Register")
                 </p>
-                @* Enable this once you have account confirmation enabled for password reset functionality
                     <p>
                         @Html.ActionLink("שכחת את הסיסמה", "ForgotPassword")
-                    </p>*@
+                    </p>
                 }
                 </section>
 
