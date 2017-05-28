@@ -163,54 +163,66 @@ block content
 
 
               // donate Section
-    section#donate(style="font-family: 'Reem Kufi', sans-serif !important;")
+    section#donate(style="!important;")
       .container
         .row
           .col-lg-12.text-center
             h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") سلامتكم - رغم الألم يوجد أمل 
             h3.section-subheading.text-muted يمكنكم التبرع بإحدى الطرق التالية 
+        
         .row.text-center
-              .col-md-3
+          .col-md-3
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
-                  i.fa.fa-id-card-o.fa-stack-1x.fa-inverse 
+                  i.fa.fa-university.fa-stack-1x.fa-inverse 
                 h4.service-heading
                   // E-Commerce
                 p.text-muted(style='font-weight: !important;')
                   |تحويل التبرع الى حساب 
-                  | بنك هبينلئومي  הבינלאומי (31) 
-                  |  الفرع الرئيسي \ القدس - 012 - 
+                  | بنك هبينلئومي 
+                  br
+                  |(הבינלאומי (31
+                  br
+                  |  الفرع الرئيسي \ القدس - 012  
+                  br
                   |حساب رقم 842907
+                  br
                   |رمز الحساب 409
-             .col-md-3
+          .col-md-3
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
-                  i.fa.fa-university.fa-stack-1x.fa-inverse
+                  i.fa.fa-address-card-o.fa-stack-1x.fa-inverse
                 h4.service-heading
                   // E-Commerce
                 p.text-muted(style='font-weight: !important;')
-                  |تحويل التبرع الى حساب 
-                  | بنك هبينلئومي  הבינלאומי (31) 
-                  |  الفرع الرئيسي \ القدس - 012 - 
-                  |حساب رقم 842907
-                  |رمز الحساب 409
-              .col-md-3
+                  |ارسال شيك الى عنوان الجمعية 
+                  |ص.ب 40077 ميكود 90805
+                
+          .col-md-3
                 span.fa-stack.fa-4x
                   i.fa.fa-circle.fa-stack-2x.text-primary
-                  i.fa.fa-newspaper-o.fa-stack-1x.fa-inverse
+                  i.fa.fa-file-pdf-o.fa-stack-1x.fa-inverse
                 h4.service-heading
                   // Responsive Design
-                p.text-muted(style='font-weight: bold !important;')
-                  | تحرص الجمعية على أن تبقى صوتها مسموعاً, مؤثراً من خلال إنشاء مجلة ثقافية دوريّة, متنوعة (ولتأخذ الكلمة حقها في التأثير)
-              .col-md-3
-                span.fa-stack.fa-4x
+                p.text-muted(style='font-weight: !important;')
+                  | تحويلة شهرية بواسطة البنك (הוראת קבע) وذلك من خلال تعبئة النموذج المرفق واعادته الينا |في البريد او الاتصال بنا للتفاصيل
+                  br
+                  p
+                  <a href="https://github.com/ZeinaAbuSwai/Salametcom/blob/master/truma.pdf">لتعبئة النموذج اضغط هنا</a>
+                  
+                  
+           .col-md-3
+                span.fa-stack.fa-4x                
                   i.fa.fa-circle.fa-stack-2x.text-primary
-                  i.fa.fa-users.fa-stack-1x.fa-inverse
+                  i.fa.fa-cc-visa.fa-stack-1x.fa-inverse
                 h4.service-heading
                   // Web Security
-                p.text-muted(style='font-weight: bold !important;')
-                  | تشكّل الجمعية وأعضاؤها جسداً مترابطاَ متماسكاَ, وتسعى بدورها إلى مد الجسور بين أعضائها واستقطاب أكبر عدد ممكن من الأكاديميين الذين تهمهم مصلحة بلدهم. فهنالك قضايا مشتركة عالقة ممكن متابعتها معًا.
-            
+                p.text-muted(style='font-weight: !important;')
+                  | للتبرع بواسطة بطاقة الاعتماد
+                  br
+                  p
+                  <a href="https://www.paypal.com/il/cgi-bin/webscr?cmd=_flow&SESSION=EtVjzeHdKf65Ecc4h1JZ9nL-_oW5LMX1toPh1c22n5DBytEDmfS_U2su-U8&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationStart&rapidsStateSignature=2f1583b21edac3d96aab7a360ec70ca2158ecc49">اضغط هنا</a>
+              
 
 
 
@@ -242,13 +254,14 @@ block content
                 button.btn.btn-xl(type='submit') أرسل
           .col-md-2
           .col-md-5
-            ul.list-item
-              
-                 span.fa-stack
-                  i.fa.fa-phone-square.fa-stack-2x.text-primary :0524504404
-                  i.fa.fa-fax-square.fa-stack-2x.text-primary :025330111
-              
-                  
-                h4 فاكس: 025330111
-                h4 البريد الالكتروني: salametcom@gmail.com
-                h4 حساب الفيس بوك: salametcom
+            ul.list-item 
+                link(href='https://fonts.googleapis.com/css?family=Aclonica', rel='stylesheet')
+                style.
+                  body {
+                  font-family: 'Aclonica';font-size: 14px;
+                  }
+                
+                p فاكس: 025330111
+                p  salametcom@gmail.com: البريد الالكتروني
+                p  salametcom: حساب الفيس بوك
+               

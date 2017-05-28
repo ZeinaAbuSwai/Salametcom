@@ -588,7 +588,9 @@ aside.clients img {
   margin: 50px auto;
 }
 
-
+.detailInContact {
+  font-family: 'Aclonica';font-size: 22px;
+}
 
 
 section#contact {
