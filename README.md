@@ -21,9 +21,7 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Project Management Board| [here](https://github.com/jce-il/project-template/projects/1) |
 | Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/jce-il/project-template.svg)](https://github.com/ZeinaAbuSwai/Salametcom/graphs/contributors)|
 
-## Please visit our [live application](https://demo.reactstarterkit.com/)
-- Alright, currently only a landing page...
-
+## Please visit our [live application](https://salametcom.herokuapp.com/)
 
 ## Disclaimer
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
