@@ -9,11 +9,14 @@ var app = express();
 
 var index = require('./routes/index');
 var auth = require('./routes/auth');
+var authVol = require('./routes/authVol');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
+var loginvolounteer = require('./routes/loginvolounteer');
+var calender = require('./routes/calender');
+var mail = require('./routes/mail');
 var volounteer = require('./routes/volounteer');
-var newartical = require('./routes/newartical');
-var artical_text = require('./routes/artical_text');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -21,7 +24,6 @@ app.set('view engine', 'jade');
 // DataBase 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://salametkom:salametkom1234@ds141401.mlab.com:41401/fuadsalamet');
-//mongoose.connect('mongodb://localhost/academic');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -40,10 +42,13 @@ app.use(session({
 app.use('/', index);
 app.use('/users', users);
 app.use('/auth', auth);
+app.use('/authVol', authVol);
 app.use('/admin', admin);
+app.use('/mail', mail);
+app.use('/calender', calender);
+//app.use('/auth/login/volounteer', volounteer);
 app.use('/volounteer', volounteer);
-app.use('/artical_text', artical_text);
-app.use('/newartical', newartical);
+app.use('/loginvolounteer', loginvolounteer);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -64,3 +69,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+

@@ -26,7 +26,7 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message,
                 },
                 cache: false,
                 success: function() {
@@ -71,4 +71,14 @@ $(function() {
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
+});
+
+
+$("#sendmessage").click(function(){
+    alert("لقد تم ارسال الرسالة بنجاح , جمعية سلامتكم تشكركم على");
+});
+
+
+$("#register").click(function () {
+    alert("لقد تم تسجيل دخولك بنجاح");
 });

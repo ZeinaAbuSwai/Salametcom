@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var Admin = require('../models/admin');
-var Volounteer = require('../models/volounteer');
 router.get('/',checkLogin, function(req, res, next) {
   var user = req.session.user;
   console.log("im in admin + "+req.session.user);
-  res.render('admin');
+  //after the login sucsses eill going to the calenderr page
+  res.render('calender');
 });
 
 function checkLogin(req,res,next)

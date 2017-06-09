@@ -1,3 +1,4 @@
+
 extends layout
 
 block content
@@ -15,6 +16,7 @@ block content
           .col-lg-12.text-center
             h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") نبذة عن الجمعية
             h4 سلامتكم - رغم الألم يوجد أمل
+
             br
             br
         .row
@@ -33,7 +35,7 @@ block content
 
               li.timeline-inverted
                 .timeline-image
-                  img.img-circle.img-responsive(src='img/about1.jpg', style='height: 100% !important;', alt='')
+                  img.img-circle.img-responsive(src='img/about1.jpg', style='height: 100% !important;width: 100% !important;', alt='')
                 .timeline-panel
                   .timeline-heading
                     h4 "إذا نظرت بعين التفاؤل إلى الوجود، لرأيت الجمال شائعاً في كل ذراته"
@@ -71,7 +73,7 @@ block content
                             h4
                               br
                               | حنين مجادلة
-                              br
+                              br 
                               | طالبة دكتوراة
                               br
                               | في العمل الاجتماعي
@@ -231,37 +233,40 @@ block content
       .container
         .row
           .col-lg-12.text-center
-            h2.section-heading راسلنا
-            h3.section-subheading.text-muted(style='color: black !important;') جمعية سلامتكم تشكرك جزيل الشكر على مراسلتك لنا
+            h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;")  راسلنا
+            h3.section(style='color: black !important;') جمعية سلامتكم تشكرك جزيل الشكر على مراسلتك لنا
         .row
           .col-md-5
             .row
-              .form-group
-                input#name.form-control(type='text', placeholder='إسمك *', required='', data-validation-required-message='الرجاء كتابة اسمك')
-                p.help-block.text-danger
-              .form-group
-                input#email.form-control(type='email', placeholder='أيميل *', required='', data-validation-required-message='الرجاء كتابة بريدك الالكتروني.')
-                p.help-block.text-danger
-              .form-group
-                input#phone.form-control(type='tel', placeholder='رقم الهاتف *', required='', data-validation-required-message='الرجاء كتابة رقمك.')
-                p.help-block.text-danger
-              .form-group
-                textarea#message.form-control(placeholder='الرسالة *', required='', data-validation-required-message='لا يمكن ارسال رسالة فارغة.')
-                p.help-block.text-danger
-            .clearfix
-              .text-center
-                #success
-                button.btn.btn-xl(type='submit') أرسل
+              form(method="post" action="/mail")
+                .form-group
+                  input#name.form-control(type='text', placeholder='* إسمك ', name="name" ,required='', data-validation-required-message='الرجاء كتابة اسمك',)
+                  p.help-block.text-danger
+                .form-group
+                  input#email.form-control(type='email',name="email" , placeholder='* أيميل ', required='', data-validation-required-message='الرجاء كتابة بريدك الالكتروني.')
+                  p.help-block.text-danger
+                .form-group
+                  input#phone.form-control(type='tel', placeholder='* رقم الهاتف ', name="phone" ,required='', data-validation-required-message='الرجاء كتابة رقمك.')
+                  p.help-block.text-danger
+                .form-group
+                  textarea#message.form-control(placeholder='* الرسالة ', required='',name="message" , data-validation-required-message='لا يمكن ارسال رسالة فارغة.')
+                  p.help-block.text-danger
+                    input(id="sendmessage" style="margin-left: 40%;" , class="btn btn-primary" type='submit' ,value="ارسل")
           .col-md-2
           .col-md-5
-            ul.list-item 
+            ul.a
+              li رقم تسجيل الجمعية: 580557791
+              li هاتف: 0545994404 | 0525330111
+              li فاكس: 025330111             
+              li البريد الالكتروني: salametcom@gmail.com 
+              li حساب الفيس بوك:  salametcom    		
                 link(href='https://fonts.googleapis.com/css?family=Aclonica', rel='stylesheet')
                 style.
                   body {
+                  
                   font-family: 'Aclonica';font-size: 14px;
                   }
                 
-                p فاكس: 025330111
-                p  salametcom@gmail.com: البريد الالكتروني
-                p  salametcom: حساب الفيس بوك
+                
                
+			   

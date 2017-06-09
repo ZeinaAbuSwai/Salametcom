@@ -4,7 +4,14 @@ var Schema = mongoose.Schema;
 
 var volounteerSchema = new Schema({
   user:  String,
-  password: String
+  password: String,
+  phone: String,
+  email: String,
+  place: String,
 });
 
-module.exports = mongoose.model("volounteer",volounteerSchema);
+module.exports = mongoose.model("Volounteer",volounteerSchema);
+
+
+
+
