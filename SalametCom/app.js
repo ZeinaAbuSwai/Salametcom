@@ -13,7 +13,7 @@ var authVol = require('./routes/authVol');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
 var loginvolounteer = require('./routes/loginvolounteer');
-var calender = require('./routes/calender');
+var calendar = require('./routes/calendar');
 var mail = require('./routes/mail');
 var volounteer = require('./routes/volounteer');
 
@@ -45,7 +45,7 @@ app.use('/auth', auth);
 app.use('/authVol', authVol);
 app.use('/admin', admin);
 app.use('/mail', mail);
-app.use('/calender', calender);
+app.use('/calendar', calendar);
 //app.use('/auth/login/volounteer', volounteer);
 app.use('/volounteer', volounteer);
 app.use('/loginvolounteer', loginvolounteer);

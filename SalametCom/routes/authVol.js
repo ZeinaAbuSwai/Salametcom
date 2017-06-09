@@ -59,7 +59,7 @@ function checkvolounteer(req,res,next)
 {
   if(req.session.user)
   {
-    res.redirect('/calender');
+    res.redirect('/calendar');
   }
    
   

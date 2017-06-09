@@ -75,7 +75,7 @@ $('#name').focus(function() {
 
 
 $("#sendmessage").click(function(){
-    alert("لقد تم ارسال الرسالة بنجاح , جمعية سلامتكم تشكركم على");
+    alert("لقد تم ارسال الرسالة بنجاح");
 });
 
 

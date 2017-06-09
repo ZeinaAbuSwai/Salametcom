@@ -5,7 +5,7 @@ router.get('/',checkLogin, function(req, res, next) {
   var user = req.session.user;
   console.log("im in admin + "+req.session.user);
   //after the login sucsses eill going to the calenderr page
-  res.render('calender');
+  res.render('calendar');
 });
 
 function checkLogin(req,res,next)

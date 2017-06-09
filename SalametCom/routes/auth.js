@@ -66,7 +66,7 @@ router.post('/loginvolounteer', function(req, res, next) {
         var user2= vol.user;
         console.log(user2);
         req.session.User=user;
-        res.redirect('/calender');
+        res.redirect('/calendar');
       }
       else
         res.render('loginvolounteer',{error:'كلمة المرور غير صحيحة'});

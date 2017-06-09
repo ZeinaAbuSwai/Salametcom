@@ -4,7 +4,7 @@ var loginvolounteer = require('../models/volounteer');
 router.get('/',checkvolounteer, function(req, res, next) {
   var user = req.session.user;
   console.log("im the volounteer + "+req.session.user);
-  res.render('calender');
+  res.render('calendar');
 });
 
 function checkvolounteer(req,res,next)
