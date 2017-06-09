@@ -353,11 +353,10 @@ section h3.section-subheading {
   right: auto;
 }
 .fuad > .timeline-image h4 {
-  right: : 0;
-  margin-right: : 0;
+  right: 0;
+  margin-right: 0;
   width: 150px;
   height: 150px;
-  position: color-profile: ;
   z-index: 100;
   background-color: #505050;
   color: white;
@@ -367,6 +366,9 @@ section h3.section-subheading {
   font-size: 18px;
   margin-top: 5px;
   line-height: 30px;
+}
+.fuad > .timeline-image .h5 {
+    margin-top: 20px;
 }
 .reema > .timeline-image h4 {
   right: : 0;
@@ -402,11 +404,13 @@ section h3.section-subheading {
   margin-top: 12px;
   line-height: 14px;
 }
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   text-align: left;
   padding: 0 20px 0 100px;
 }
+
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
