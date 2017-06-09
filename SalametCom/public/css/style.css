@@ -195,3 +195,10 @@
 .login-help{
   font-size: 12px;
 }
+
+section#contact {
+    background-color: #222222;
+    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
