@@ -42,7 +42,7 @@ This project is developed as part of the requirements for a [software engineerin
 - [Iteration 1 - DESIGN](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-1--DESIGN)
 - [Iteration 2 - FUNCTIONALITY](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-2---FUNCTIONALITY)
 - [Iteration 3 - CALENDAR](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-3---CALENDAR)
-- [Iteration 4 - TEST & DEBUGGING](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-4---TEST-&-DEBUGGING)
+- [Iteration 4 - Supplement](https://github.com/ZeinaAbuSwai/Salametcom/wiki/Iteration-4---Supplement)
 
 
 
