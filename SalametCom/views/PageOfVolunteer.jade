@@ -1,0 +1,55 @@
+extends layout
+
+block content
+  .d(style="margin-top: 100px;")
+  .container
+    form(method='post' action="/auth/logout" style="display: inline; text-align: center;" )
+      input(class='btn btn-primary' type='submit', value='تسجيل الخروج')
+    .page-header
+      .pull-right.form-inline
+        .btn-group
+          button.btn.btn-primary(data-calendar-nav='prev') << Prev
+          button.btn(data-calendar-nav='today') Today
+          button.btn.btn-primary(data-calendar-nav='next') Next >>
+        .btn-group
+          button.btn.btn-warning(data-calendar-view='year') Year
+          button.btn.btn-warning.active(data-calendar-view='month') Month
+          button.btn.btn-warning(data-calendar-view='week') Week
+          button.btn.btn-warning(data-calendar-view='day') Day
+      h3
+      small -  - hello to our calendar , thank you for your helping 
+    br
+    br
+    
+    .row
+      .col-md-2
+        br
+        h2( dir='rtl') انواع التطوع 
+        h4
+          ul(style='list-style-type:circle' , dir='rtl')
+            li(style='color:#ad2121;') سيارة - الأحمر
+            li(style='color:#800080;') فعاليات - البنفسجي
+            li(style='color:#e3bc08;') مرافقة - الأصفر
+            li(style='color:#1e90ff;') تحضير أكل - الأزرق
+    
+      .col-md-10
+        #calendar
+        script(type='text/javascript').
+          var calendar = $("#calendar").calendar(
+          {
+          tmpl_path: "/tmpls/",
+          events_source: '/events'
+          });
+      .col-md-0.5
+        
+      script(type='text/javascript', src='/js/calendar-app.js')
+
+    br
+    br
+
+    p(dir='rtl' , style='color:green;') 
+      b شكرًا لإنضمامكم لجمعية سلامتكم معكم وبكم نكبر حتى يصل الخير و يَعُم الجميع .
+    p(dir='rtl' , style='color:green;') 
+      b في الوقت الراهن ، للقيام بأحد انواع التطوع الرجاء التواصل معنا على صفحة الفيسبوك او الاتصال بنا .
+    P(dir='rtl' , style='color:green;') 
+      b  دمتم بخير :) 

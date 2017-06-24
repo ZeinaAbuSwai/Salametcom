@@ -15,7 +15,13 @@ var admin = require('./routes/admin');
 var loginvolounteer = require('./routes/loginvolounteer');
 var calendar = require('./routes/calendar');
 var mail = require('./routes/mail');
-var volounteer = require('./routes/volounteer');
+var registar = require('./routes/registar');
+var events = require('./routes/events');
+var PageOfAdmin = require('./routes/PageOfAdmin');
+var PageOfVolunteer = require('./routes/PageOfVolunteer');
+var news = require('./routes/news');
+var list = require('./routes/list');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -46,8 +52,12 @@ app.use('/authVol', authVol);
 app.use('/admin', admin);
 app.use('/mail', mail);
 app.use('/calendar', calendar);
-//app.use('/auth/login/volounteer', volounteer);
-app.use('/volounteer', volounteer);
+app.use('/events', events);
+app.use('/PageOfAdmin', PageOfAdmin);
+app.use('/PageOfVolunteer', PageOfVolunteer);
+app.use('/authVol/news', news);
+app.use('/list', list);
+app.use('/registar', registar);
 app.use('/loginvolounteer', loginvolounteer);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var volounteerSchema = new Schema({
+var registarSchema = new Schema({
   user:  String,
   password: String,
   phone: String,
@@ -10,7 +10,7 @@ var volounteerSchema = new Schema({
   place: String,
 });
 
-module.exports = mongoose.model("Volounteer",volounteerSchema);
+module.exports = mongoose.model("registar",registarSchema);
 
 
 

@@ -1,0 +1,82 @@
+extends rtl-layout
+
+block content
+  .d(style="margin-top: 200px !important;")
+  .container
+    
+    .row
+      .col-lg-12.text-center
+        h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") اضافة حدث
+    a.navbar-brand.page-scroll(href='/admin', style="font-family: 'Reem Kufi', sans-serif !important;") للعودة الى صفحة المدير
+
+
+    
+    .news
+      form.form-horizontal(method="post" action="/events/add")
+        fieldset
+          //- Form Name
+          //- <legend>Form Name</legend>
+          //- Text input
+          .form-group
+            label.col-md-4.control-label(for='title') العنوان
+            .col-md-8
+              input#title.form-control.input-md(name='title', placeholder='الموضوع', required='', type='text')
+              span.help-block أدخل عنوان الموضوع
+          //- Text input
+          .form-group
+            label.col-md-4.control-label(for='start_time') تاريخ البداية
+            .col-md-8
+              #start_time.input-group.date
+                input.form-control(type='text', name='start_time', placeholder='من...')
+                input#selectedStartDateTime(type='hidden', name='start')
+                span.input-group-addon
+                  span.glyphicon.glyphicon-calendar
+          //- Text input
+          .form-group
+            label.col-md-4.control-label(for='end_time') تاريخ النهاية
+            .col-md-8
+              #end_time.input-group.date
+                input.form-control(type='text', name='end_time', placeholder='إلى...')
+                input#selectedEndDateTime(type='hidden', name='end')
+                span.input-group-addon
+                  span.glyphicon.glyphicon-calendar
+          //- Textarea
+          .form-group
+            label.col-md-4.control-label(for='details') التفاصيل
+            .col-md-4
+              textarea#details.form-control(name='details')
+          //- Select Basic
+          .form-group
+            label.col-md-4.control-label(for='class') نوع الحدث
+            .col-md-8
+              select#selectbasic.form-control(name='class')
+                option(value='event-car') سيارة
+                option(value='event-food') أكل
+                option(value='event-esc') مرافقة
+                option(value='event-ev') فعاليات
+          //- Button
+          .form-group
+            .col-md-5
+            .col-md-2
+              input#submit.btn.btn-primary(name='submit', type='submit')
+            .col-md-5
+
+  script(type='text/javascript').
+    $(function () {
+    var start_time_picker = $('#start_time').datetimepicker();
+    var end_time_picker = $('#end_time').datetimepicker({
+    useCurrent: false
+    });
+    start_time_picker.on('dp.change', function(e) {
+    var start_time = e.date.unix();
+    console.log("Start time milliseconds: ", start_time);
+    $("#selectedStartDateTime").val(new Date(start_time).getTime() * 1000);
+    $('#end_time').data("DateTimePicker").date($('#start_time').data("DateTimePicker").date().add(1, 'hour'));
+    });
+    end_time_picker.on('dp.change', function(e) {
+    var end_time = e.date.unix();
+    $("#selectedEndDateTime").val(new Date(end_time).getTime() * 1000);
+    console.log("End time milliseconds: ", end_time);
+    });
+    });
+

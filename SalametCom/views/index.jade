@@ -5,10 +5,34 @@ block content
     // Header
     header
       .container
-        .intro-text(style='padding-top: 30px !important; margin-top: 0px !important; height: 750px; margin-top: 14%;')
-          .intro-lead-in(style="font-family: 'Reem Kufi', sans-serif !important;") 
-          .intro-heading(style="font-family: 'Reem Kufi', sans-serif !important;") 
-          
+        .addnew
+          .col-md-1
+         
+            link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+            .container-fluid
+              .row
+                .sicon
+                  .text-center
+                    .icon-circle
+                        a.ifacebook(href='https://www.facebook.com/Salametcom-سلامتكم-453417048025036/?fref=ts', title='Facebook', target="blank")
+                          i.fa.fa-facebook          
+              
+          .col-md-5
+            img.img-responsive(src="http://imgh.us/1_3392.png", style='height: 100% !important;', alt='')
+           
+          .col-md-6
+            .jumbotron(style="background: transparent !important")
+              marquee(behavior='scroll', direction='up' ,  onmouseover='this.stop();' ,onmouseout='this.start();',scrolldelay='100' style="height:400px !important;")
+                for news1 in news
+                  h4(style="color: #000 !important;")
+                    tr
+                      td(style="color: #000 !important;")= news1.news
+                      
+                  h5(style="color: #000 !important;")     
+                      td(style="color: #000 !important;")= news1.date
+                      br 
+                      br   
+       .colorrr 
            // About Section
     section#about
       .container
@@ -27,7 +51,6 @@ block content
                   img.img-circle.img-responsive(src='img/1.png', style='height: 100% !important;', alt='')
                 .timeline-panel
                   .timeline-heading
-                   // h4 سلامتكم - رغم الألم يوجد أمل
                   
                   .timeline-body
                     h4
@@ -41,11 +64,6 @@ block content
                     h4 "إذا نظرت بعين التفاؤل إلى الوجود، لرأيت الجمال شائعاً في كل ذراته"
                     h4 وهذا ما نسعى عمله في "سلامتكم" - أن نعطي ذلك الأمل في كل لحظات الألم.
 
-                    //h4.subheading فتح مكتبة ابوغوش لطلاب الجامعات 
-                  //.timeline-body
-                    p.text-muted
-                      | قامت الجمعية بافتتاح مكتبة ابوغوش لتصبح مكبة عامه لطلاب ابوغوش وللاجتماعات , فقد قامت بترتيب وتجهيز المكتبة لكي يتمكنوا الطلاب بالدراسة فيها بشكل جماعي او فردي في جو لطيف بعيدا عن كل ازعاج
-
               li.timeline-inverted
                 .timeline-image
                   h4
@@ -54,9 +72,8 @@ block content
                     | من 
                     br
                     | ...هذه الجمعية
-    
+
   
-   
     // Team Section
     section#team.bg-light-gray
       .container

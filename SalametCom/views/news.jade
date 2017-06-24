@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .d(style="margin-top: 200px !important;")
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") انشر الخبر في الصفحة الرئيسية
+    a.navbar-brand.page-scroll(href='/admin', style="font-family: 'Reem Kufi', sans-serif !important;") للعودة الى صفحة المدير
+
+
+    .news
+      form(method="post" action="/authVol/news")
+        h1(style="text-align:right; width: 100% !important;") :الموضوع
+        textarea#news2.form-control(name='news', rows='10', cols='80',placeholder=' * الموضوع', required='', data-validation-required-message='' style="width: 100% !important;")
+        h1(style="text-align:right; width: 100% !important;") :التاريخ
+        input#date.form-control(type='text',name="date" , placeholder=' * تاريخ dd/mm/yyyy', required='', data-validation-required-message='')
+        p.help-block.text-danger
+              .form-group
+
+              
+
+        button.btn.btn-primary(type='submit', value='انشر' style='margin-left: 50%; margin-top:10px;;') أنشر الخبر  
+       
+
+            

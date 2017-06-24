@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    // Header
+    header
+      .container 
+        a.navbar-brand.page-scroll(href='/admin', style="font-family: 'Reem Kufi', sans-serif !important;") للعودة الى صفحة المدير
+           
+        .addlist  
+            table(border='1')
+              thead
+                tr
+                     th.li #
+                     th.li الاسم
+                     th.li مكان السكن
+                     th.li رقم الهاتف
+                     th.li الايميل
+                   
+              tbody
+                each list1, i in list
+                    tr
+                        td= i+1
+                        td= list1.user
+                        td= list1.place
+                        td= list1.phone
+                        td= list1.email
+                    
+
+           
+              
+               
+
+
+
+

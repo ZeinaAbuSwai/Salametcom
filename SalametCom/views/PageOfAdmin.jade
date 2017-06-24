@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .d(style="margin-top: 100px;")
+  .container
+    form(method='post' action="/auth/logout" style="display: inline; text-align: center;" )
+      input(class='btn btn-primary' type='submit', value='تسجيل الخروج')
+    ul.nav.navbar-nav.navbar-right
+      li
+        a.page-scroll(href='/authVol/news', style='font-size: 20px !important; color: #black !important; font-weight: bold !important;') انشر خبر 
+                  
+      li
+        a.page-scroll(href='/authVol/list', style='font-size: 20px !important; color: #black !important; font-weight: bold !important;') تفاصيل عن المتطوعين
+
+               
+    #calendar
+  script(type='text/javascript').
+    var calendar = $("#calendar").calendar(
+    {
+    tmpl_path: "/tmpls/",
+    events_source: '/events'
+    });

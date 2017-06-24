@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    // Header
+    header
+      .container 
+        a.navbar-brand.page-scroll(href='/admin', style="font-family: 'Reem Kufi', sans-serif !important;") للعودة الى صفحة المدير
+           
+        .addlist  
+            table(border='1')
+              thead
+                tr
+                     th.li #
+                     th.li العنوان
+                     th.li النوع
+                     th.li تاريخ البداية
+                     th.li تاريخ الانتهاء
+                     th.li التفاصيل
+                    
+                   
+              tbody
+                //- each event1, i in events
+                tr
+                  td= event.id
+                  td= event.title
+                  td= event.class
+                  td= event.start
+                  td= event.end
+                  td= event.details
+                        
+                       
+
+           
+              
+               
+
+
+
+

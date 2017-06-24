@@ -7,15 +7,119 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.icon-circle .fa{
+    font-size           : 25px;
+    color               : #e84700;
+    margin              : 0 auto;
+    height              : 80px;
+    width               : 80px;
+    border-radius       : 50%;
+    border              :2px solid #e84700;
+    line-height         : 80px;
+    cursor              : pointer;
+    -webkit-transition  : all  ease-in-out 0.35s;
+    -moz-transition     : all  ease-in-out 0.35s;
+    -o-transition       : all  ease-in-out 0.35s;
+    -ms-transition      : all  ease-in-out 0.35s;
+    transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+}
+
+.icon-circle  .fa:hover{
+    
+    background-color        : #e84700;    
+    color                   : #fff;
+    border                  : 1px solid #e84711;
+    -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+    -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+    -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+    -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+    box-shadow              : inset 0px 0px 0px 5px #ffffff;
+    -ms-transform           : scale(1.2,1.2); 
+    -webkit-transform       : scale(1.2,1.2);
+    -moz-transform          : scale(1.2,1.2); 
+    -o-transform            : scale(1.2,1.2); 
+    transform               : scale(1.2,1.2);  
+}
+
+.icon-circle  i:before{
+    margin-left         : 0px;
+    font-size           : 40px;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+
+
+ .icon-circle .fa{
+    font-size           : 15px;
+    color               : #e84700;
+    margin              : 0 auto;
+    height              : 40px;
+    width               : 40px;
+    border-radius       : 50%;
+    border              :2px solid #e84700;
+    line-height         : 40px;
+    cursor              : pointer;
+    -webkit-transition  : all  ease-in-out 0.35s;
+    -moz-transition     : all  ease-in-out 0.35s;
+    -o-transition       : all  ease-in-out 0.35s;
+    -ms-transition      : all  ease-in-out 0.35s;
+    transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+}
+
+.icon-circle  .fa:hover{
+    
+    background-color        : #e84700;    
+    color                   : #fff;
+    border                  : 1px solid #e84711;
+    -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+    -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+    -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+    -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+    box-shadow              : inset 0px 0px 0px 5px #ffffff;
+    -ms-transform           : scale(1.2,1.2); 
+    -webkit-transform       : scale(1.2,1.2);
+    -moz-transform          : scale(1.2,1.2); 
+    -o-transform            : scale(1.2,1.2); 
+    transform               : scale(1.2,1.2);  
+}
+
+.icon-circle  i:before{
+    margin-left         : 0px;
+    font-size           : 20px;
+}   
+}
+
+.ifacebook .fa{
+    color               :#3B5998;
+    border              :2px solid #3B5998;
+}
+
+.ifacebook .fa:hover{
+    
+    background-color        : #3B5998;    
+    color                   : #fff;
+    border                  : 1px solid #3B5998;
+
+}
+
+
+
 .text-muted {
   color: #505050;
 }
 .text-primary {
   color: #B22222  ;
 }
+
 p {
   font-size: 18px;
   line-height: 1.75;
+}
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 50px;
+  
 }
 p.large {
   font-size: 16px;
@@ -42,6 +146,7 @@ h3,
 h4,
 h5,
 h6 {
+    margin-left: 15px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -213,32 +318,24 @@ fieldset[disabled] .btn-xl.active {
     transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
+    border-radius: 30px;
   }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #505050;
-    padding: 10px 0;
+    padding: 10px ;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
-header {
-  background-image: url('../img/header-bg.jpg');
- opacity: 0.9 ;
 
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white;
+header {
+ 
+  margin-top: 10%;
 }
+
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -294,6 +391,7 @@ section h3.section-subheading {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;
+  margin-left: 15px;
 }
 @media (min-width: 768px) {
   section {
@@ -358,10 +456,10 @@ section h3.section-subheading {
   width: 150px;
   height: 150px;
   z-index: 100;
-  background-color: #505050;
-  color: white;
+  background-color: rgba(250, 250, 250, 0.8);
+  color: black;
   border-radius: 140%;
-  border: 2px solid #B22222;
+  border: 5px solid #B22222;
   text-align: center;
   font-size: 18px;
   margin-top: 5px;
@@ -371,20 +469,19 @@ section h3.section-subheading {
     margin-top: 20px;
 }
 .reema > .timeline-image h4 {
-  right: : 0;
-  margin-right: : 0;
-  width: 180px;
-  height: 180px;
-  position: color-profile: ;
-  z-index: 100;
-  background-color: #505050;
-  color: white;
-  border-radius: 140%;
-  border: 2px solid #B22222;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 5px;
-  line-height: 30px;
+    right: 0;
+    margin-right: 0;
+    width: 180px;
+    height: 180px;
+    z-index: 100;
+    background-color: rgba(250, 250, 250, 0.8);
+    color: black;
+    border-radius: 140%;
+    border: 5px solid #B22222;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 30px;
 }
 .timeline > li .timeline-image {
   left: 0;
@@ -549,10 +646,12 @@ section#contact .form-group textarea {
 }
 section#contact .form-group input.form-control {
   height: auto;
+  direction: rtl;
 
 }
 section#contact .form-group textarea.form-control {
   height: 136px;
+  direction: rtl;
 }
 section#contact .form-control:focus {
   border-color: #B22222;
@@ -583,8 +682,62 @@ list-style-position: outside;
 -webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera */
 transform: rotateX(45deg);
 }
+.addnew{
+  padding: 15px;
+  direction: rtl;
+text-align: center;
+}
+.addlist{
+  padding: 20px;
+  direction: rtl;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px; 
+  text-align: center;
+}
+.addlist  table{
+  width: 100%;
+}
+.addlist  th{
+height: 50px;
+color: #505050;
+font-family: 'Reem Kufi', sans-serif ;
+ padding: 20px;
+text-align: center;
+}
 
+.addlist  tr:hover{
+ height: 50px;
+ background-color: #DCDCDC;
+  color: #505050;
+   padding: 20px;
+    text-align: center;
+}
+.li{
+   text-align: center;
+   background-color: #B22222;
+   
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
 
+}
+.news textarea.form-control {
+  padding: 15px;
+  direction: rtl;
+  background-color:#FFFAFA ;
+}
+.news input.form-control {
+  padding: 15px;
+  direction: rtl;
+  background-color:#FFFAFA ;
+}
+.btn-btn-primaryy{
+  height: 100%;
 }
 section#contact :-moz-placeholder {
 
@@ -664,7 +817,7 @@ ul.social-buttons li a:active {
 }
 ::selection {
   text-shadow: none;
-  background: white;
+  background: #1C86EE;
 }
 img::selection {
   background: transparent;
@@ -677,10 +830,11 @@ body {
   webkit-tap-highlight-color: #B22222;
 }
 .dropbtn {
-    background-color: #B22222;
+    font-weight: bolder;
+    background-color: #505050;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
 }
@@ -709,7 +863,13 @@ body {
     text-decoration: none;
     display: block;
 }
-
+.publish{
+    color: black;
+    padding: 8px 12px;
+    text-decoration: right ;
+    display: block;
+    margin: center;
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
@@ -722,5 +882,20 @@ body {
 .dropdown:hover .dropbtn {
     background-color: #B22222;
 }
+.back input:active {
+  background-color: #DCDCDC;
+  color: black;
+  
+}
+.back  input:hover {
+    color: black;
+    background: #DCDCDC;
+}
 
- 
+
+
+
+ .colorrr{
+  height: 2px;
+  background-color: #B22222;
+ }

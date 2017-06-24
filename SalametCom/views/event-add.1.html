@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>موقع جمعية سلامتكم</title>
+  <link href="../public/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+  <link href="../public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  <link href="../public/css/agency.css" rel="stylesheet">
+  <link href="../public/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/calendar.css">
+  <script src="../public/vendor/jquery/jquery.min.js"></script>
+  <script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../public/js/underscore-min.js"></script>
+  <script type="text/javascript" src="../public/js/moment.min.js"></script>
+  <script type="text/javascript" src="../public/js/calendar.js"></script>
+  <script type="text/javascript" src="../public/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="../public/css/bootstrap-datetimepicker.min.css">
+
+  <!-- Load Bootstrap RTL theme from RawGit -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation-->
+  <nav id="mainNav" style="color: #3f7619 !important;" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display-->
+      <div style="font-family: 'Reem Kufi', sans-serif !important;" class="navbar-header page-scroll">
+        <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">توجيه</span> القائمة  <i class="fa fa-bars"></i></button>
+        <a href="/" style="font-family: 'Reem Kufi', sans-serif !important;" class="navbar-brand page-scroll">سلامتكم - رغم الألم يوجد أمل</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling-->
+      <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+      </div>
+    </div>
+  </nav>
+
+  <div style="margin-top: 200px !important;" class="d"></div>
+
+
+
+
+
+
+  <form class="form-horizontal">
+    <fieldset>
+
+      <!-- Form Name -->
+      <!--<legend>Form Name</legend>-->
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="title">العنوان</label>
+        <div class="col-md-8">
+          <input id="title" name="title" placeholder="الموضوع" class="form-control input-md" required="" type="text">
+          <span class="help-block">أدخل عنوان الموضوع</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="start_time">تاريخ البداية</label>
+        <div class="col-md-8">
+
+          <div class='input-group date' id="start_time">
+            <input type='text' class="form-control" name="start_time" placeholder="من..." />
+            <input id="selectedStartDateTime" type='hidden' name="selectedStartDateTime"/>
+            <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="end_time">تاريخ النهاية</label>
+        <div class="col-md-8">
+          <div class='input-group date' id="end_time">
+            <input type='text' class="form-control" name="end_time" placeholder=إلى... />
+            <input id="selectedEndDateTime" type='hidden' name="selectedEndDateTime"/>
+            <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="details">التفاصيل</label>
+        <div class="col-md-4">
+          <textarea class="form-control" id="details" name="details"></textarea>
+        </div>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="selectbasic">نوع الحدث</label>
+        <div class="col-md-8">
+          <select id="selectbasic" name="selectbasic" class="form-control">
+            <option value="1">سيارة</option>
+            <option value="2">أكل</option>
+            <option value="3">مرافقة</option>
+            <option value="4">فعاليات</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+          <input id="submit" name="submit" type="submit" class="btn btn-primary">أضف حدث</input>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+
+
+
+  <div class="container"> </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><span class="copyright">Azrieli Students @2017</span></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+    crossorigin="anonymous"></script>
+  <script src="../public/js/jqBootstrapValidation.js"></script>
+  <script src="../public/js/contact_me.js"></script>
+  <script src="../public/js/agency.min.js"></script>
+  <script src="../public/js/modal.js">
+  </script>
+  <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow66.js"></script>
+  <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+  <script type="text/javascript">
+    $(function () {
+            var start_time_picker = $('#start_time').datetimepicker();
+            var end_time_picker = $('#end_time').datetimepicker({
+               useCurrent: false
+            });
+            start_time_picker.on('dp.change', function(e) {
+               var start_time = e.date.unix();
+               console.log("Start time milliseconds: ", start_time);
+
+               $("#selectedStartDateTime").val(new Date(start_time).getTime());
+               $('#end_time').data("DateTimePicker").date($('#start_time').data("DateTimePicker").date().add(1, 'hour'));
+
+            });
+            end_time_picker.on('dp.change', function(e) {
+               var end_time = e.date.unix();
+               $("#selectedEndDateTime").val(new Date(end_time).getTime());
+               console.log("End time milliseconds: ", end_time);
+            });
+
+    });
+  </script>
+</body>
+
+</html>
