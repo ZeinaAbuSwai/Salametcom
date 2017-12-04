@@ -17,8 +17,8 @@ We're trying to use the best tools and practices in order to produce a quality e
 | Recommended IDE | [VSCode](https://code.visualstudio.com) |
 | Group Chat | [![Join the chat at https://gitter.im/jce-il/project-template](https://badges.gitter.im/jce-il/project-template.svg)](https://gitter.im/Salametcom2017/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) |
 | License | [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://opensource.org/licenses/MIT) |
-| Issues | [![GitHub issues](https://img.shields.io/github/issues/jce-il/project-template.svg?style=flat)](https://github.com/jce-il/project-template/issues) |
-| Project Management Board| [here](https://github.com/jce-il/project-template/projects/1) |
+| Issues | [![GitHub issues](https://img.shields.io/github/issues/jce-il/project-template.svg?style=flat)](https://github.com/ZeinaAbuSwai/Salametcom/issues) |
+| Project Management Board| [here](https://github.com/ZeinaAbuSwai/Salametcom/projects/1) |
 | Contributors | [![GitHub contributors](https://img.shields.io/github/contributors/jce-il/project-template.svg)](https://github.com/ZeinaAbuSwai/Salametcom/graphs/contributors)|
 
 ## Please visit our [live application](https://salametcom.herokuapp.com/)
